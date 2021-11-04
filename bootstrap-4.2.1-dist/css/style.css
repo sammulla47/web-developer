@@ -1,0 +1,187 @@
+body {
+	font-family: 'monospace', cursive;
+	
+}
+
+/*
+.bg
+{
+	background-color: black;
+
+	background-image:url("Images/web.jpg");
+	height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+
+.container {
+	position: relative;
+	height: 50vh;
+	width: 100%;
+background: rgb(0, 0, 0);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.word {
+	max-width: 100%;
+	letter-spacing: 5px;
+	font-size: 2.375rem;
+	position: absolute;
+	color: #f5f5f5;
+	animation: word 15s infinite ease-in-out;
+}
+
+.word:nth-child(1) {
+	animation-delay: -15s;
+}
+
+.word:nth-child(2) {
+	animation-delay: -11s;
+}
+
+.word:nth-child(3) {
+	animation-delay: -7s;
+}
+
+.word:nth-child(4) {
+	animation-delay: -3s;
+}
+
+@keyframes word {
+
+	0%,
+	5%,
+	100% {
+		filter: blur(0px);
+		opacity: 1;
+	}
+
+	20%,
+	80% {
+		filter: blur(35px);
+		opacity: 0;
+	}
+}
+
+
+
+/************************************************************/
+h1 {
+	position: absolute;
+/*	color: #484848;*/
+	font-size: 35px;
+	font-weight: bold;
+	font-family: monospace;
+	letter-spacing: 5px;
+	cursor: pointer
+}
+
+h1 span {
+	transition: .2s linear
+}
+
+h1:hover span:nth-child(1) {
+	margin-right: 0px
+}
+
+h1:hover span:nth-child(1):after {
+	content: " Your ";
+}
+
+h1:hover span:nth-child(2):before {
+	content: " Developed Now ";
+}
+
+h1:hover span:nth-child(2) {
+	margin-left: 55px
+}
+
+h1:hover span {
+	color: #fff;
+	text-shadow: 0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 40px #fff;
+}
+
+.mt-200 {
+	margin-top: 200px;
+}
+.mt-180{
+	margin-top: 180px;
+}
+
+
+.but {
+ width: 140px;
+ height: 45px;
+ font-size: 18px;
+ cursor: pointer;
+ border: none;
+ outline: none;
+ background: transparent;
+ color: white;
+ font-family: 'Times New Roman', Times, serif;
+ font-weight: 700;
+ position: relative;
+ transition: all 0.5s;
+ z-index: 1;
+}
+
+.but::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 5px;
+ height: 100%;
+ background-color: white;
+ z-index: -1;
+ transition: all 0.5s;
+}
+
+.but:hover::before {
+ width: 100%;
+}
+
+.but:hover {
+ color: black;
+}
+
+.but:active:before {
+ background: #b9b9b9;
+}
+.footer-nav-menu li {
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 0;
+}
+
+.t-co{
+color: #007bff;	
+}
+/**************************************/
+/*
+.two-2{
+background-image:url("Images/two-img.jpg");
+}
+.three-3{
+background-image:url("Images/three-img.jpg");
+}
+.four-4{
+	background-image:url("Images/four-img.jpg");
+}
+.five-5{
+	background-image:url("Images/five-img.jpg");
+}
+.six-6{
+	background-image:url("Images/six-img.jpg");
+}
+
+*/
